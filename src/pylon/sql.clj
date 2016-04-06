@@ -19,7 +19,7 @@
        (format "    %s" field)))
     ") "
     (when inherits?
-      (format "INHERITS %s" (sql-quote inherits?)))
+      (format "INHERITS ( %s )" (sql-quote inherits?)))
     ";") name))
 
 (defn- sql-datatype [k]
