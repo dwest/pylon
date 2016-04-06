@@ -11,4 +11,5 @@
             [pylon.web :as web]))
 
 (defroutes app
-  (GET "/" request web/index))
+  (GET "/" request web/index)
+  (GET "/sql" request web/sql))
